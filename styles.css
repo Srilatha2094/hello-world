@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,7 +32,7 @@ body {
   margin-left: 0;
 }
 
-/* for main section */
+/* for main section 
 .active-cont {
   margin-left: 250px;
 }
@@ -46,4 +46,33 @@ body {
 .my-container input {
   border-radius: 2rem;
   padding: 2px 20px;
+}
+*/
+.ftr__list {
+  border: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 767px) {
+  /**nav-expand for footer with head and ul**/
+  .nav-folderized .nav h4 {
+    cursor: pointer;
+  }
+  .nav-folderized ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+  }
+  .nav-folderized .nav h4:after {
+    content: "+";
+    float: right;
+  }
+  .nav-folderized .nav.open h4:after {
+    content: "-";
+  }
+  .nav-folderized .nav.open ul {
+    height: auto;
+    max-height: 500px;
+    transition: max-height 1s ease-in !important;
+  }
+  /**nav-expand for footer with head and ul**/
 }
