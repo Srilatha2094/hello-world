@@ -7,5 +7,4 @@ menu_btn.addEventListener("click", () => {
   console.log("Srilatha4");
   console.log("srilatha");
   console.log("srilatha1");
-  console.log("srilatha5");
 });
